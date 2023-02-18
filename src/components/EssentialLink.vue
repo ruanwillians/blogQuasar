@@ -9,7 +9,7 @@
       <q-item-label>Feed</q-item-label>
     </q-item-section>
   </q-item>
-  
+
     <q-item
     clickable
     tag="a"
@@ -19,9 +19,9 @@
       <q-item-label>Postar</q-item-label>
     </q-item-section>
   </q-item>
-    
+
   </div>
-  
+
 </template>
 
 <script>
@@ -38,6 +38,10 @@ export default defineComponent({
       type: String,
       default: '/create'
     },
+  },
+
+  methods:{
+    redirect
   }
 })
 </script>
