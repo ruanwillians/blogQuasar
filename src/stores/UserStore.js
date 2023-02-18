@@ -9,7 +9,7 @@ export const useUserStore = defineStore('user', {
         user: {
             email: '',
             password: '',
-            id: '', 
+            id: '',
             username: ''
         },
     }),
@@ -17,7 +17,6 @@ export const useUserStore = defineStore('user', {
     },
     actions: {
         async login() {
-
             axios.post(`${url}/api/login`, {
                 email: this.user.email,
                 password: this.user.password,

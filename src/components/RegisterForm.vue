@@ -84,7 +84,9 @@ export default {
               timeout: 1000,
               message: "usuário criado com sucesso, faça login",
             });
-    
+
+          this.$router.push("/login")
+
         })
         .catch((err) => {
           Notify.create({

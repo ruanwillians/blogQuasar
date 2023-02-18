@@ -3,7 +3,7 @@ import axios from 'axios'
 import {useRouter} from 'vue-router'
 
 const router = useRouter()
-const url = "http://localhost:3333"
+const url = "https://blogadonis-production.up.railway.app"
 const api = axios.create({ baseURL: url,
   headers: {
     "content-type": "application/json"
