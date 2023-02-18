@@ -1,15 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "quasar.config.js", "use": "@vercel/static-build" }
-  ],
   "routes": [
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "/precache-manifest.*.js", "dest": "/precache-manifest.[hash].js" },
-    { "src": "/service-worker.js", "dest": "/service-worker.js" },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
+
