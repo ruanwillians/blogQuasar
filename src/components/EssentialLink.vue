@@ -39,9 +39,5 @@ export default defineComponent({
       default: '/create'
     },
   },
-
-  methods:{
-    redirect
-  }
 })
 </script>
